@@ -81,10 +81,6 @@ p {
   align-items: center;
 }
 
-.media__image {
-  display: flex;
-}
-
 .media__image .image-container {
   border-radius: 100%;
   overflow: hidden;
