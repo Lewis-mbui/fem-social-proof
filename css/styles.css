@@ -73,3 +73,36 @@ p {
   background-color: var(--color-magenta-400);
   color: var(--color-purple);
 }
+
+/* Media component */
+.media {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.media__image {
+  display: flex;
+}
+
+.media__image .image-container {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.media__profile-pic {
+  width: 3rem;
+}
+
+.media__text {
+}
+
+.media__name {
+  margin-bottom: -2px;
+  font-weight: 700;
+}
+
+.media__role {
+  color: var(--color-pink);
+  font-weight: 700;
+}
