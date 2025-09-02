@@ -94,15 +94,30 @@ p {
   width: 3rem;
 }
 
-.media__text {
-}
-
 .media__name {
   margin-bottom: -2px;
   font-weight: 700;
+  color: var(--color-white);
 }
 
 .media__role {
   color: var(--color-pink);
   font-weight: 700;
+}
+
+/* Comment Block Component */
+.comment-block {
+  background-color: var(--color-purple);
+  padding: 2rem;
+  border-radius: 8px;
+  /* max-width: 300px; */
+}
+
+.comment-block__body {
+  padding-top: 1.6rem;
+}
+
+.comment-block__text {
+  color: var(--color-white);
+  width: 27ch;
 }
