@@ -62,3 +62,14 @@ h1 {
 p {
   line-height: 1.5;
 }
+
+/* Rating block component */
+.rating-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  padding-block: 0.5rem;
+  background-color: var(--color-magenta-400);
+  color: var(--color-purple);
+}
