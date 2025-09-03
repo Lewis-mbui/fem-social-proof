@@ -132,7 +132,7 @@ p {
   width: 27ch;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1299px) {
+@media screen and (min-width: 700px) and (max-width: 1299px) {
   .comment-block__text {
     width: 100%;
   }
@@ -187,7 +187,7 @@ p {
   outline: 4px solid green;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 700px) {
   .comment-section {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
@@ -217,4 +217,9 @@ p {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
+}
+
+.comment__wrapper {
+  max-width: fit-content;
+  margin-inline: auto;
 }
