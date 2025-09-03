@@ -178,6 +178,24 @@ p {
   .hero__text {
     width: 43ch;
   }
+
+  .hero-rating-holder {
+    outline: 3px solid red;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hero-rating-holder.ls-small {
+    padding-right: 3rem;
+  }
+
+  .hero-rating-holder.ls-medium {
+    padding-right: 6rem;
+  }
+
+  .rating-block {
+    max-width: 350px;
+  }
 }
 
 /* Comments Section */
@@ -185,6 +203,11 @@ p {
   display: grid;
   row-gap: 1rem;
   outline: 4px solid green;
+}
+
+.comment__wrapper {
+  max-width: fit-content;
+  margin-inline: auto;
 }
 
 @media screen and (min-width: 700px) {
@@ -207,7 +230,7 @@ p {
 
 @media screen and (min-width: 1024px) {
   .wrapper {
-    padding: 7rem 8rem;
+    padding: 7rem 5rem;
   }
 }
 
@@ -219,7 +242,8 @@ p {
   align-items: center;
 }
 
-.comment__wrapper {
-  max-width: fit-content;
-  margin-inline: auto;
+
+/* Utils */
+@media screen and (min-width: 1024px) {
+  
 }
