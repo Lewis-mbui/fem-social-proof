@@ -53,10 +53,11 @@ body {
 }
 
 h1 {
-  line-height: 1.1;
+  line-height: 1;
   word-spacing: -2px;
   color: var(--color-purple);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.3rem;
+  font-size: clamp(1.875rem, 1.6549295774647887rem + 0.9389671361502347vw, 2.5rem);
 }
 
 p {
@@ -69,9 +70,23 @@ p {
   flex-direction: column;
   align-items: center;
   border-radius: 6px;
+  margin-bottom: 1rem;
   padding-block: 0.5rem;
   background-color: var(--color-magenta-400);
+}
+
+.rating-block__text {
   color: var(--color-purple);
+  font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  .rating-block {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0.8rem;
+  }
 }
 
 /* Media component */
@@ -106,7 +121,6 @@ p {
   background-color: var(--color-purple);
   padding: 2rem;
   border-radius: 8px;
-  /* max-width: 300px; */
 }
 
 .comment-block__body {
@@ -116,4 +130,91 @@ p {
 .comment-block__text {
   color: var(--color-white);
   width: 27ch;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+  .comment-block__text {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .comment-block__text {
+    width: 30ch;
+  }
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  row-gap: 1.7rem;
+  padding-block-end: 2rem;
+  outline: 4px solid blue;
+}
+
+.hero__title {
+  text-align: center;
+  width: 12ch;
+  margin-inline: auto;
+}
+
+.hero__text {
+  text-align: center;
+  margin-inline: auto;
+  width: 32ch;
+  color: var(--color-magenta-700);
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero__title, .hero__text {
+    text-align: left;
+    margin-inline: 0;
+  }
+
+  .hero__text {
+    width: 43ch;
+  }
+}
+
+/* Comments Section */
+.comment-section {
+  display: grid;
+  row-gap: 1rem;
+  outline: 4px solid green;
+}
+
+@media screen and (min-width: 1024px) {
+  .comment-section {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+/* Wrapper */
+.wrapper {
+  padding-inline: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  outline: 4px solid red;
+  width: 100%;
+  max-width: 1300px;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    padding: 7rem 8rem;
+  }
+}
+
+/* Container */
+.container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }

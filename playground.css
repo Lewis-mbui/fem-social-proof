@@ -1,0 +1,5 @@
+.box {
+  outline: 4px solid green;
+  max-width: 300px;
+  display: grid;
+}
