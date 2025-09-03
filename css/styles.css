@@ -149,7 +149,6 @@ p {
   display: grid;
   row-gap: 1.7rem;
   padding-block-end: 2rem;
-  outline: 4px solid blue;
 }
 
 .hero__title {
@@ -180,7 +179,6 @@ p {
   }
 
   .hero-rating-holder {
-    outline: 3px solid red;
     display: flex;
     justify-content: flex-end;
   }
@@ -202,7 +200,6 @@ p {
 .comment-section {
   display: grid;
   row-gap: 1rem;
-  outline: 4px solid green;
 }
 
 .comment__wrapper {
@@ -245,5 +242,18 @@ p {
 
 /* Utils */
 @media screen and (min-width: 1024px) {
-  
+  .comment-block-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 350px;
+  }
+
+  .comment-block-container.us-small {
+    padding-bottom: 1rem;
+  }
+
+  .comment-block-container.us-medium {
+    padding-bottom: 2.4rem;
+  }
 }
